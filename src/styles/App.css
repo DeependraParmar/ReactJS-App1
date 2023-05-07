@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    font-family: Open Sans;
+}
+form{
+    position: relative;
+    width: 30vw;
+    margin: auto;
+    padding: 20px;
+}
+form>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+input{
+    padding: 1rem;
+    border: 1px solid rgb(198, 198, 198);
+    outline: none;
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+}
+form>div>button{
+    padding: 10px 20px;
+    margin: 20px;
+    text-transform: uppercase;
+    background-color: #8800ff;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.coincontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.coincontainer .coin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(240,240,240);
+    height: 150px;
+    width: 150px;
+    margin: 1rem;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(120,120,120,0.9);
+}
+.coin > img{
+    width: 50%;
+}
+.coin > h1{
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 0px;
+}
+.loading > div{
+    width: 100px;
+    height: 100px;
+    border-bottom: 4px solid #8800ff;
+    border-radius: 50%;
+    animation: rotation 0.4s infinite linear;
+}
+@keyframes rotation {
+    to{
+        transform: rotateZ(360deg);
+    }
+}
